@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;800&display=swap');
+
+
+* {
+    margin: 0;
+    background: #546E7A;
+    color: #ECEFF1;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    
+}
+
+button {
+    width: 55px;
+    max-width: 8vw;
+    height: 50px;
+    max-height: 5vh;
+    margin: 3px;
+    border-radius: 10%;
+    font-size: 3vh;
+    background: #263238;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5vmin;
+    font-weight: 800;
+    margin-bottom: 5vh;
+}
+
+
+.yellow {
+    background-color: rgb(187, 187, 12) !important;
+}
+
+.red {
+    background-color: rgb(143, 53, 53) !important;
+}
+
+.green {
+    background-color: rgb(75, 134, 75) !important;
+}
+
+.guess {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 330px;
+    max-width: 55vh;
+    max-height: 11.35vh;
+    
+}
+
+.guesses {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.guess-letter {    
+    background: #455A64;
+    border-radius: 10%;
+    height: 9.85vh;
+    width: 10vh;
+    max-width: 60px;
+    max-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    font-weight: 800;
+    
+    
+}
+ 
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;  
+    max-width: 700px;
+    justify-content:center;
+    margin-top: 30px;
+
+}
+
+.active {
+    border-bottom: 7px solid #263238 !important;
+    padding-top: 4px;
+}
+
+.current-guess .guess-letter{
+    border: 3px solid #263238;
+    background-color: #546E7A;
+}
+
+.keyboard-line {
+    max-width: 100vw;
+    display: flex;
+    max-height: 8vh;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+#enter, #backspace {
+    padding: 0 12px;
+    width: 100px;
+    max-width: 20vw;
+}
+
