@@ -1,7 +1,16 @@
-import React from 'react';
+import Guess from "./Guess";
 
 const Guesses = () => {
-  return <div></div>;
+  return (
+  <div className= "guesses">
+      <Guess classes = 'guess'/>
+      <Guess classes = 'guess'/>
+      <Guess classes = 'guess'/>
+      <Guess classes = 'guess'/>
+      <Guess classes = 'guess'/>
+      <Guess classes = 'guess'/>      
+  </div>
+  );
 };
 
 export default Guesses;
