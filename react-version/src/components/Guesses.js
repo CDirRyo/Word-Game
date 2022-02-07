@@ -1,14 +1,11 @@
 import Guess from "./Guess";
-import {useState} from "react";
 
-const Guesses = () => {
-    const [currentGuess, setCurrentGuess] = useState(0);
-    const indexes = [0,1,2,3,4,5];
-    
+const Guesses = ({letter, guess, background, guesses}) => {
+    const indexes = [0,1,2,3,4,5];   
 
     return (
     <div className= "guesses">
-        {indexes.map(index => <Guess isCurrentGuess={index===currentGuess} classes = {index === currentGuess ? `guess current-guess` : "guess"}/>)}    
+        {indexes.map(index => <Guess background={background[index]} currentLetters={guesses[index]} letter = {letter} key={`guess-${index}`} isCurrentGuess={index===guess} classes = {index === guess ? `guess current-guess` : "guess"}/>)}    
     </div>
     );
 };

@@ -1,5 +1,5 @@
-const GuessLetter = ({classes}) => {
-  return <p className={classes}></p>;
+const GuessLetter = ({classes, background, currentLetter}) => {
+  return <p className={`${classes} ${background}`}>{currentLetter}</p>;
 };
 
 export default GuessLetter;
